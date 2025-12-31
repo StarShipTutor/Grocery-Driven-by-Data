@@ -1,0 +1,40 @@
+# Grocery – Driven by Data Configuration
+# Database credentials should be in .env, not here
+
+project:
+  name: "Grocery – Driven by Data"
+  version: "1.0.0"
+
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  data_external: "data/external"
+  outputs_figures: "outputs/figures"
+  outputs_reports: "outputs/reports"
+
+database:
+  schema: "grocery"
+  pool_size: 5
+  echo: false  # Set to true for SQL debugging
+
+visualization:
+  style: "seaborn-v0_8-whitegrid"
+  figure_dpi: 150
+  default_figsize: [12, 6]
+  color_palette: "viridis"
+
+modeling:
+  random_state: 42
+  test_size: 0.2
+  cv_folds: 5
+
+challenges:
+  c01:
+    name: "Spaghetti → Schema"
+    focus: "Data modeling, ETL, baseline model"
+  c02:
+    name: "Errors → Integrity"
+    focus: "Data quality, imputation, validation"
+  c03:
+    name: "Data → Signal"
+    focus: "Trend analysis, forecasting"
