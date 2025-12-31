@@ -2,6 +2,8 @@
 
 **Kaggle Challenge Execution Workspace**
 
+> Grocery - Driven by Data. Kaggle challenges and long term research into AI-first data science.
+
 This workspace houses the work for a three-challenge series focused on grocery sales data analysis and forecasting.
 
 ## Challenges
